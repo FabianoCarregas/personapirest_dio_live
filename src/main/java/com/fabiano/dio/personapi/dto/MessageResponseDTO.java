@@ -1,4 +1,4 @@
-package com.fabiano.dio.personapi.controller.dto;
+package com.fabiano.dio.personapi.dto;
 
 import lombok.Builder;
 import lombok.Data;
