@@ -18,13 +18,13 @@ public class PersonService {
 
     private PersonRepository personRepository;
 
-    private final PersonMapper personMapper= PersonMapper.INSTANCE;
+    private final PersonMapper personMapper;
 
     public MessageResponseDTO createPerson( PersonDTO personDTO) {
         Person personToSave = personMapper.toModel(personDTO);
 
         Person savedPerson = personRepository.save(personToSave);
-        return createMessageResponse(savedPerson.getId(), "Created person with ID");
+        return createMethodResponse(savedPerson.getId(), "Created person with ID");
     }
     public List<PersonDTO> listAll(){
         List<Person> allPeople =personRepository.findAll();

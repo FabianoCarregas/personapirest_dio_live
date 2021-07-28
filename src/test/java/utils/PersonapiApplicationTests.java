@@ -1,4 +1,4 @@
-package com.fabiano.dio.personapi;
+package utils;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
